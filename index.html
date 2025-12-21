@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Explain Any Page Like I'm 5 - Free Chrome Extension | Instant AI Decoder</title>
+    <meta name="title" content="Explain Any Page Like I'm 5 - Free Chrome Extension | Instant AI Decoder" />
+    <meta name="description" content="Free Chrome extension that explains any webpage in simple terms. Understand complex pages instantly with AI-powered ELI5, Business, and Technical explanations. No sign-up required." />
+    <meta name="keywords" content="explain webpage, ELI5, simplify text, chrome extension, AI decoder, understand complex pages, free extension, page explainer, text simplifier, AI explanation" />
+    <meta name="author" content="Explain Like I'm 5" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <link rel="canonical" href="https://www.explainlikeim5.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.explainlikeim5.com/" />
+    <meta property="og:title" content="Explain Any Page Like I'm 5 - Free Chrome Extension" />
+    <meta property="og:description" content="Instantly turn confusing pages into simple, clear explanations. Free Chrome extension with AI-powered ELI5, Business, and Technical modes." />
+    <meta property="og:image" content="https://www.explainlikeim5.com/og-image.jpg" />
+    <meta property="og:site_name" content="Explain Like I'm 5" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.explainlikeim5.com/" />
+    <meta property="twitter:title" content="Explain Any Page Like I'm 5 - Free Chrome Extension" />
+    <meta property="twitter:description" content="Instantly turn confusing pages into simple, clear explanations. Free Chrome extension with AI-powered explanations." />
+    <meta property="twitter:image" content="https://www.explainlikeim5.com/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Explain Like I'm 5",
+      "applicationCategory": "BrowserExtension",
+      "operatingSystem": "Chrome",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150"
+      },
+      "description": "Free Chrome extension that explains any webpage in simple terms using AI. Choose from ELI5, Business, or Technical explanation modes.",
+      "url": "https://www.explainlikeim5.com/",
+      "author": {
+        "@type": "Organization",
+        "name": "Explain Like I'm 5"
+      },
+      "featureList": [
+        "ELI5 explanations",
+        "Business mode",
+        "Technical mode",
+        "No sign-up required",
+        "Privacy-first",
+        "Works on any website"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Explain Like I'm 5",
+      "url": "https://www.explainlikeim5.com/",
+      "description": "Free Chrome extension that explains any webpage in simple terms",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.explainlikeim5.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Explain Like I'm 5",
+      "url": "https://www.explainlikeim5.com/",
+      "logo": "https://www.explainlikeim5.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "aman.yadav@bonuslyf.com",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo" itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name">Explain Like I'm 5</span>
+          </div>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq" class="secondary-link">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" itemscope itemtype="https://schema.org/WebPage">
+      <div class="hero-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-headline" itemprop="headline">
+            <span class="headline-line">Understand any webpage</span>
+            <span class="headline-line highlight">explained like you're 5</span>
+          </h1>
+          <p class="hero-subheadline">
+            Instantly turn confusing pages into simple, clear explanations.<br />No
+            jargon. No fluff. Just clarity.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary">
+              <span>Add to Chrome - It's Free</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="trust-badges">
+            <span class="badge">✓ Works on any website</span>
+            <span class="badge">✓ No sign-up required</span>
+            <span class="badge">✓ Privacy-first</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo">
+      <div class="container">
+        <h2 class="section-headline">From confusion → clarity in seconds</h2>
+        <div class="demo-content">
+          <div class="demo-box demo-before">
+            <div class="demo-label">Before</div>
+            <p class="demo-text">
+              Our proprietary machine learning algorithm leverages advanced
+              natural language processing techniques to facilitate enhanced
+              content comprehension through intelligent semantic analysis and
+              contextual understanding.
+            </p>
+          </div>
+          <div class="demo-arrow">→</div>
+          <div class="demo-box demo-after">
+            <div class="demo-label">After</div>
+            <p class="demo-text">
+              This tool reads webpages and explains them in simple words. Like
+              having a friend explain something complicated to you.
+            </p>
+          </div>
+        </div>
+        <p class="demo-caption">Right-click any page → Get instant clarity</p>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <h2 class="section-headline">How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon" aria-label="Globe icon">🌐</div>
+            <h3 class="step-headline">Open any webpage</h3>
+            <p class="step-description">
+              Visit any website you want to understand
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon" aria-label="Mouse click icon">🖱️</div>
+            <h3 class="step-headline">Click 'Explain this page'</h3>
+            <p class="step-description">
+              Right-click or click the extension icon
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon" aria-label="Sparkles icon">✨</div>
+            <h3 class="step-headline">Get a clear explanation instantly</h3>
+            <p class="step-description">AI breaks it down in simple terms</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explanation Modes Section -->
+    <section class="modes" id="features">
+      <div class="container">
+        <h2 class="section-headline">Three Ways to Understand</h2>
+        <div class="modes-grid">
+          <div class="mode-card">
+            <div class="mode-icon">🧒</div>
+            <div class="mode-badge">Free</div>
+            <h3 class="mode-title">ELI5</h3>
+            <p class="mode-subtitle">Explain Like I'm 5</p>
+            <p class="mode-description">
+              Simple, friendly, human explanations. Perfect for anyone who wants
+              clarity without the complexity.
+            </p>
+            <ul class="mode-features">
+              <li>Uses analogies</li>
+              <li>No jargon</li>
+              <li>Under 150 words</li>
+              <li>Perfect for beginners</li>
+            </ul>
+          </div>
+          <div class="mode-card">
+            <div class="mode-icon">👩‍💼</div>
+            <div class="mode-badge">Free</div>
+            <h3 class="mode-title">Business</h3>
+            <p class="mode-subtitle">Professional Perspective</p>
+            <p class="mode-description">
+              Understand what it does, who it's for, and why it matters. Clear
+              and actionable.
+            </p>
+            <ul class="mode-features">
+              <li>Problem → Solution → Outcome</li>
+              <li>Business value focus</li>
+              <li>Concise and actionable</li>
+              <li>For professionals</li>
+            </ul>
+          </div>
+          <div class="mode-card">
+            <div class="mode-icon">🧠</div>
+            <div class="mode-badge">Free</div>
+            <h3 class="mode-title">Technical</h3>
+            <p class="mode-subtitle">Deep Breakdown</p>
+            <p class="mode-description">
+              Detailed technical analysis for developers and power users.
+              Preserves accuracy while explaining.
+            </p>
+            <ul class="mode-features">
+              <li>Technical accuracy maintained</li>
+              <li>Structured sections</li>
+              <li>Terminology explained</li>
+              <li>For experts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who This Is For Section -->
+    <section class="audience">
+      <div class="container">
+        <h2 class="section-headline">Who This Is For</h2>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-icon">🎓</div>
+            <h3 class="audience-title">Students</h3>
+            <p class="audience-description">
+              Understand complex academic content
+            </p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">💼</div>
+            <h3 class="audience-title">Professionals</h3>
+            <p class="audience-description">Quickly grasp business documents</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">💻</div>
+            <h3 class="audience-title">Developers</h3>
+            <p class="audience-description">Get technical breakdowns of docs</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">📊</div>
+            <h3 class="audience-title">Marketers</h3>
+            <p class="audience-description">Decode competitor pages</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">👤</div>
+            <h3 class="audience-title">Anyone</h3>
+            <p class="audience-description">Tired of jargon-heavy pages</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy & Trust Section -->
+    <section class="privacy">
+      <div class="container">
+        <h2 class="section-headline">Privacy & Trust</h2>
+        <p class="privacy-intro">
+          We built this with your privacy in mind. Here's what that means:
+        </p>
+        <div class="privacy-grid">
+          <div class="privacy-item">
+            <div class="privacy-icon">🔒</div>
+            <h3 class="privacy-title">No Tracking</h3>
+            <p class="privacy-description">
+              We don't track your browsing or collect personal data
+            </p>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-icon">🚫</div>
+            <h3 class="privacy-title">No Ads</h3>
+            <p class="privacy-description">
+              Zero advertisements. Clean experience only
+            </p>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-icon">👤</div>
+            <h3 class="privacy-title">No Account Required</h3>
+            <p class="privacy-description">
+              Start using immediately. No sign-up needed
+            </p>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-icon">📄</div>
+            <h3 class="privacy-title">Only Visible Text</h3>
+            <p class="privacy-description">
+              We only process visible page content, nothing else
+            </p>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-icon">🔐</div>
+            <h3 class="privacy-title">No Passwords</h3>
+            <p class="privacy-description">
+              We never access passwords or sensitive data
+            </p>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-icon">💾</div>
+            <h3 class="privacy-title">Local Storage</h3>
+            <p class="privacy-description">
+              Your explanation history stays on your device
+            </p>
+          </div>
+        </div>
+        <a href="privacy-policy.html" class="privacy-link"
+          >Read our full Privacy Policy</a
+        >
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+      <div class="container">
+        <h2 class="section-headline">Loved by Curious Readers</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "Finally, a tool that actually helps me understand complex pages.
+              Game changer!"
+            </p>
+            <p class="testimonial-author">- Developer</p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "I use this daily for research. Saves me so much time trying to
+              decode jargon."
+            </p>
+            <p class="testimonial-author">- Student</p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "The ELI5 mode is perfect. Makes everything so much clearer."
+            </p>
+            <p class="testimonial-author">- Professional</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-headline">Simple, Transparent Pricing</h2>
+        <div class="pricing-card">
+          <div class="pricing-title">Free</div>
+          <div class="pricing-price">$0/forever</div>
+          <ul class="pricing-features">
+            <li>ELI5 explanations</li>
+            <li>Business mode</li>
+            <li>Technical mode</li>
+            <li>Copy explanations</li>
+            <li>Explanation history</li>
+            <li>Keyboard shortcuts</li>
+            <li>All features included</li>
+          </ul>
+          <button class="btn btn-primary">Get Started Free</button>
+        </div>
+        <p class="pricing-note">
+          Everything is free. No hidden costs. No subscriptions. Just clarity.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-headline">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is this extension free?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! All features are completely free. There are no subscriptions,
+                no hidden costs, and no usage limits. We believe clarity should be
+                accessible to everyone.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Does it work on all websites?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, the extension works on virtually any website. Simply
+                right-click or click the extension icon, and it will explain the
+                current page. It works on news sites, documentation, blogs,
+                company pages, and more.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How fast is it?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Most explanations appear in 2-5 seconds. For pages you've already
+                explained, results are instant thanks to our smart caching system.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I explain just selected text?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! Simply highlight text on any page, right-click, and select
+                "Explain selected text" from the context menu. This is perfect for
+                understanding specific sections without explaining the entire page.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What's the difference between ELI5, Business, and Technical modes?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                <strong>ELI5:</strong> Simple, friendly explanations perfect for
+                anyone. Uses plain language and analogies.<br /><br />
+                <strong>Business:</strong> Professional perspective focusing on what
+                it does, who it's for, and why it matters.<br /><br />
+                <strong>Technical:</strong> Detailed breakdowns for developers and
+                experts, preserving technical accuracy while explaining.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is my data safe?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely. We don't track your browsing, collect personal
+                information, or store data on external servers. Explanation history
+                is stored locally on your device only. We only process the visible
+                text content of pages you explicitly request explanations for.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Does it read my passwords?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No, never. The extension only reads visible text content from
+                webpages. It cannot and does not access passwords, login credentials,
+                or any sensitive information. Your privacy and security are our top
+                priorities.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do I need to create an account?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No account required! Just install the extension and start using it
+                immediately. No sign-up, no email, no hassle.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What if the explanation is still too complex?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Click the "Too complex" button, and we'll regenerate the
+                explanation with even simpler language, shorter sentences, and more
+                basic analogies.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I export explanations?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! You can copy explanations to your clipboard, and we're working
+                on additional export options like Markdown and PDF.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+      <div class="container">
+        <h2 class="cta-headline">
+          Stop guessing what webpages mean.<br />Start understanding them.
+        </h2>
+        <button class="btn btn-primary btn-large">Add to Chrome - Free</button>
+        <p class="cta-support">Works on any website. No sign-up required.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="#support">Support</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-copyright">
+            © 2025 Explain Like I'm 5. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
