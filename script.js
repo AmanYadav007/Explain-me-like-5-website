@@ -425,30 +425,30 @@ document.querySelectorAll('.mode-card, .audience-card, .privacy-item').forEach(c
   });
 });
 
-// Add click handler for CTA buttons
+// Add ripple effect for CTA buttons (only for buttons, not links)
 document.querySelectorAll('.btn-primary').forEach(button => {
-  button.addEventListener('click', function(e) {
-    // In production, this would link to Chrome Web Store
-    console.log('CTA clicked - would link to Chrome Web Store');
-    
-    // Add a ripple effect
-    const ripple = document.createElement('span');
-    const rect = this.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-    const x = e.clientX - rect.left - size / 2;
-    const y = e.clientY - rect.top - size / 2;
-    
-    ripple.style.width = ripple.style.height = size + 'px';
-    ripple.style.left = x + 'px';
-    ripple.style.top = y + 'px';
-    ripple.classList.add('ripple');
-    
-    this.appendChild(ripple);
-    
-    setTimeout(() => {
-      ripple.remove();
-    }, 600);
-  });
+  // Only add ripple effect if it's a button, not a link
+  if (button.tagName === 'BUTTON') {
+    button.addEventListener('click', function(e) {
+      // Add a ripple effect
+      const ripple = document.createElement('span');
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+      
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+      ripple.classList.add('ripple');
+      
+      this.appendChild(ripple);
+      
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  }
 });
 
 // Add ScrollTrigger refresh on resize
